@@ -1,0 +1,9 @@
+{
+    "name": "Medmer",
+    "short_name": "Medmer",
+    "start_url":"/index.html",
+    "background_color": "#DBBEA1",
+    "theme_color":"#5FCCF8",
+    "display": "standalone",
+    "orientation":"landscape"
+}
