@@ -1,10 +1,13 @@
 import React from "react";
+import { registerUser } from "../../services";
 
 export class Register extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
+    handleRegister = async (e) => {
+        e.preventDefault();
+        await registerUser(e);
+     }
+
     render() {
         return (
          <div className="base-container" ref={this.props.containerRef}>
@@ -21,7 +24,7 @@ export class Register extends React.Component {
                     <input type="email" name="email" placeholder ="email" />
                 </div>
                 <div className= "form-group">
-                    <lable htmlFor="Country"> Country </lable>
+                    <label htmlFor="Country"> Country </label>
                     <input type="text" name="Country" placeholder="Country of Origin"></input>
                 </div>
                 <div className="dropdown">
@@ -37,7 +40,7 @@ export class Register extends React.Component {
                     <input type="password" name="password" placeholder ="password" />
                 </div>
                 <div className= "footer">
-                    <button type="button" className="btn">
+                    <button type="submit" className="btn">
                        Register
                     </button>
                 </div>
