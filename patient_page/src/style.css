@@ -1,9 +1,10 @@
 body {
     margin: 0;
+    background-color:rgb(97, 180, 235);
 }
 /* add background color to the top navigation bar */
 .topnav {
-    background-color: rgb(97, 180, 235);
+    background-color: rgb(5, 7, 7);
     overflow: hidden;
     transition: top 0.3s;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -17,6 +18,12 @@ body {
     padding:14px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+.welcome {
+    background-color: rgb(97, 180, 235);
+    height: px;
+    font-weight: bold;
+    color:white;
 }
 /* change thr colot of links on the hover */
 
@@ -47,6 +54,7 @@ p {
     float: left;
     overflow: hidden;
     align-items: left;
+   
 }
 /* Dropdown button */
 .dropdown .dropbtn {
@@ -59,6 +67,7 @@ p {
     font-family: inherit;
     margin: 0;
     
+    
 }
 /* change color when hovering the links*/
 .dropdown:hover .dropbtn {
@@ -70,10 +79,9 @@ p {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color:rgb(97, 180, 235);
+    background-color:rgb(26, 158, 247);
     min-width: 160px;
     z-index: 1;
-    
 }
 /*links inside the drop down content*/
 .dropdown-content a {
@@ -87,6 +95,8 @@ p {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+    box-shadow: -2px 3px 8px #008bbd;
+    
 }
 ul{
     text-align: left;
