@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 /* add background color to the top navigation bar */
 .topnav {
     background-color: rgb(97, 180, 235);
@@ -28,12 +31,12 @@
 }
 footer {
     text-align: center;
-    padding: 3px;
-    background-color:rgb(97, 180, 235);
+  
+    background-color:rgb(24, 152, 237);
     color:navy;
 }
 /*paragraph*/
-p{
+p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 80px;
     text-align: center;
@@ -94,7 +97,7 @@ ul{
 .intro {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    color:lightcoral;
+    color: navy;
     font-size: 50px;
 }
 .copy {
@@ -102,5 +105,43 @@ ul{
     padding: 3px;
     background-color:rgb(97, 180, 235);
     color:navy;
-    padding-left: 250px;
+    padding-left: 500px;
 }
+section {
+    background-color: antiquewhite;
+}
+.panel_2 {
+    font-size: 30px;
+    color:navy;
+  
+}
+.accordion {
+    background-color:rgb(97, 180, 235);
+    color:white;
+    cursor: pointer;
+    padding: 18px;
+    width:100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: navy;
+}
+/*Style the accordion panel. Note: hidden by default*/
+.panel {
+    padding: 0 18px;
+    background-color: antiquewhite;
+    display: none;
+    overflow: hidden;
+}
+button {
+    font-size: 25px;
+}
+.contributors {
+    font-size: 15px;
+    background-color:rgb(97, 180, 235);
+    text-align: center;
+}
+
