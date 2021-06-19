@@ -4,6 +4,7 @@
     overflow: hidden;
     transition: top 0.3s;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 100px;
 }
 /*Style the links inside the navigation bar */
 .topnav a {
@@ -54,10 +55,13 @@ p{
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    
 }
 /* change color when hovering the links*/
 .dropdown:hover .dropbtn {
     background-color:navy;
+    
+    
 }
 /* drop down cintent to be hidden by default*/
 .dropdown-content {
@@ -66,6 +70,7 @@ p{
     background-color:rgb(97, 180, 235);
     min-width: 160px;
     z-index: 1;
+    
 }
 /*links inside the drop down content*/
 .dropdown-content a {
@@ -79,4 +84,23 @@ p{
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
-  }
+}
+ul{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.intro {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color:lightcoral;
+    font-size: 50px;
+}
+.copy {
+    align-items: center;
+    padding: 3px;
+    background-color:rgb(97, 180, 235);
+    color:navy;
+    padding-left: 250px;
+}
