@@ -2,6 +2,8 @@
 .topnav {
     background-color: rgb(97, 180, 235);
     overflow: hidden;
+    transition: top 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*Style the links inside the navigation bar */
 .topnav a {
@@ -28,4 +30,11 @@ footer {
     padding: 3px;
     background-color:rgb(97, 180, 235);
     color:navy;
+}
+/*paragraph*/
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;
+    text-align: center;
+    color:red;
 }
