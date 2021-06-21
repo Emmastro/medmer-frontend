@@ -38,9 +38,13 @@ body {
 }
 footer {
     text-align: center;
-  
     background-color:rgb(24, 152, 237);
     color:navy;
+}
+footer.copy {
+    color:white;
+    font-family: inherit;
+    font-weight: bold;
 }
 /*paragraph*/
 p {
@@ -107,7 +111,7 @@ ul{
 .intro {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    color: navy;
+    color:white;
     font-size: 50px;
 }
 .copy {
@@ -129,15 +133,17 @@ section {
     background-color:rgb(97, 180, 235);
     color:white;
     cursor: pointer;
-    padding: 18px;
-    width:100%;
+    padding:18px;
+    width:50%;
     text-align: left;
     border: none;
     outline: none;
-    transition: 0.4s;
+    transition: 0.3s;
+    
 }
 .active, .accordion:hover {
     background-color: navy;
+    
 }
 /*Style the accordion panel. Note: hidden by default*/
 .panel {
@@ -148,10 +154,36 @@ section {
 }
 button {
     font-size: 25px;
+    
 }
 .contributors {
     font-size: 15px;
     background-color:rgb(97, 180, 235);
     text-align: center;
+}
+section.help_centre {
+    background-color:inherit;
+    padding-bottom: 10px;
+}
+.wrapper {
+    text-align: center;
+}
+button.help {
+    background-color:rgb(133, 3, 3);
+    border-radius: 5px;
+    overflow: hidden;
+    border: none;
+    font-size: 45px;
+    color: white;
+    display: inline-flex;
+    padding: 10px 10px;
+}  
+    
+    
+    
+    
+
+button.help:hover{
+    background-color:rgb(233, 7, 7);
 }
 
