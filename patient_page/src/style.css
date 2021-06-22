@@ -3,6 +3,9 @@ body {
     background-color:rgb(97, 180, 235);
     scroll-behavior: smooth;
 }
+
+
+
 /* add background color to the top navigation bar */
 .topnav {
     background-color: rgb(5, 7, 7);
@@ -153,7 +156,12 @@ section {
 }
 button {
     font-size: 25px;
-    
+}
+h1 {
+    text-align: center;
+    font-size: 45px;
+    font-family: inherit;
+    padding: 10px 10px;
 }
 .contributors {
     font-size: 15px;
@@ -178,14 +186,16 @@ button.help {
     padding: 10px 10px;
 }  
 button.help:hover{
-    background-color:rgb(233, 7, 7);
+    background-color:rgb(248, 6, 6);
+    box-shadow: -2px 3px 8px #008bbd;
 }
 p.info {
-    font-size: 32px;
-    padding: 18px 18px;
+    font-size: 50px;
+    padding: 180px 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color:white;
     color:black;
+    height: 150px;
 }
 .topnav input[type=text] {
     float: right;
@@ -198,3 +208,62 @@ p.info {
     overflow: hidden;
     display: inherit;
 }
+.sidebar {
+    height:75%;
+    width:45%;
+    position:fixed;
+    top:0;
+    left: 0;
+    background-color: #008bbd;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidebar a {
+    padding: 18px 8px 8px 32px;
+    text-decoration: none;
+    font-size: inherit;
+    color: white;
+    display:block;
+    transition: 0.3s;
+}
+.sign_out {
+    position:absolute;
+    bottom:10px;
+    padding-bottom: 10px;
+}
+.sidebar a:hover{
+    color:inherit;
+    transition: 0.5s;
+    padding: 18px 10px;
+    width:100%;
+    font-weight: bold;
+    box-shadow: -2px 3px 8px #008bbd;
+}
+.sidebar .closebtn {
+    position:absolute;
+    top: 0;
+    right:25px;
+    font-size: inherit;
+    margin-left:50px;
+}
+.openbtn {
+    font-size:20px;
+    cursor:pointer;
+    background-color: aqua;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+.openbtn:hover{
+    background-color:#008bbd;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }

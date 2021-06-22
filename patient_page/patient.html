@@ -11,20 +11,23 @@
     </head>
     <body>
         <div class ="topnav">
+            <div id="sidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">😂</a>
+                <a href ='#'>Basic Information</a>
+                <a href ='#'>Insurance Company</a>
+                <a href ='#'>Next of Kin</a>
+                <a href ='#'>Register as a Medic</a>
+                <div class="sign_out">
+                    <a href ='#'>Sign Out</a>
+                </div>
+            </div>
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">Me</button>
+            </div>
             <a class="active" href="/index.html">Home</a>
             <link rel="stylesheet" href ="src/style.css">
             <a href="#Aboutus"> About us</a>
             <a href="#Contact">Contact us</a>
-            <div class="dropdown">
-            <button class= "dropbtn">My Profile 
-                <i class = "fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Basic Information</a>
-                <a href="#">Insurance</a>
-                <a href="#">Link 1</a>
-            </div>
-            </div>
             <input type="text" placeholder="Search ..">
         </div>
         <p class="welcome">Welcome to Medmer</p>
