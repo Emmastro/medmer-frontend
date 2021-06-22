@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color:rgb(97, 180, 235);
+    scroll-behavior: smooth;
 }
 /* add background color to the top navigation bar */
 .topnav {
@@ -30,6 +31,7 @@ body {
 .topnav a:hover {
     background-color: lightblue;
     color:navy;
+    transition: 0.5s
 }
 /* Add a color to the active/current link */
 .topnav a.active {
@@ -70,14 +72,11 @@ p {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-    
-    
+   
 }
 /* change color when hovering the links*/
 .dropdown:hover .dropbtn {
     background-color:navy;
-    
-    
 }
 /* drop down cintent to be hidden by default*/
 .dropdown-content {
@@ -178,12 +177,24 @@ button.help {
     display: inline-flex;
     padding: 10px 10px;
 }  
-    
-    
-    
-    
-
 button.help:hover{
     background-color:rgb(233, 7, 7);
 }
-
+p.info {
+    font-size: 32px;
+    padding: 18px 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:white;
+    color:black;
+}
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: inherit;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inherit;
+}
